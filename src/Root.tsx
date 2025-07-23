@@ -1,0 +1,22 @@
+// react-router-dom v6+ setup for Vite + React
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import DemoPage1 from "./DemoPage1";
+import App from "./App";
+
+const Root: React.FC = () => (
+  <Router>
+    <nav style={{ padding: 16, borderBottom: "1px solid #eee" }}>
+      <Link to="/" style={{ marginRight: 16 }}>
+        Home
+      </Link>
+      <Link to="/demo1">Demo Page 1</Link>
+    </nav>
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="/demo1" element={<DemoPage1 />} />
+    </Routes>
+  </Router>
+);
+
+export default Root;
