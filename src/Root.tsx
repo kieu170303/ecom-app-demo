@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import DemoPage1 from "./DemoPage1";
 import DemoPage2 from "./DemoPage2";
 import DemoPage3 from "./DemoPage3";
+import DemoPage4 from "./DemoPage4";
 import App from "./App";
 
 const Root: React.FC = () => (
@@ -18,13 +19,17 @@ const Root: React.FC = () => (
       <Link to="/demo2" style={{ marginRight: 16 }}>
         Demo Page 2
       </Link>
-      <Link to="/demo3">Demo Page 3</Link>
+      <Link to="/demo3" style={{ marginRight: 16 }}>
+        Demo Page 3
+      </Link>
+      <Link to="/demo4">Demo Page 4</Link>
     </nav>
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="/demo1" element={<DemoPage1 />} />
       <Route path="/demo2" element={<DemoPage2 />} />
       <Route path="/demo3" element={<DemoPage3 />} />
+      <Route path="/demo4" element={<DemoPage4 />} />
     </Routes>
   </Router>
 );
