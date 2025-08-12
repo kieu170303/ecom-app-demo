@@ -11,6 +11,7 @@ import DemoPage7 from "./DemoPage7";
 import DemoPage8 from "./DemoPage8";
 import DemoPage9 from "./DemoPage9";
 import DemoPage10 from "./DemoPage10";
+import DemoPage11 from "./DemoPage11";
 import App from "./App";
 
 const Root: React.FC = () => (
@@ -46,7 +47,10 @@ const Root: React.FC = () => (
       <Link to="/demo9" style={{ marginRight: 16 }}>
         Demo Page 9
       </Link>
-      <Link to="/demo10">Demo Page 10</Link>
+      <Link to="/demo10" style={{ marginRight: 16 }}>
+        Demo Page 10
+      </Link>
+      <Link to="/demo11">Demo Page 11</Link>
     </nav>
     <Routes>
       <Route path="/" element={<App />} />
@@ -60,6 +64,7 @@ const Root: React.FC = () => (
       <Route path="/demo8" element={<DemoPage8 />} />
       <Route path="/demo9" element={<DemoPage9 />} />
       <Route path="/demo10" element={<DemoPage10 />} />
+      <Route path="/demo11" element={<DemoPage11 />} />
     </Routes>
   </Router>
 );
